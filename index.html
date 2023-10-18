@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="icon" type="image/x-icon" href="./codelexlogo.jpg" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="text_area">
+          <h1 class="heading1">REGISTRATION FORM</h1>
+          <hr />
+          <form>
+            <div class="box-wrapper1">
+              <div class="box">
+                <div class="box1">
+                  <label for="firstname">
+                    <span class="text1">First name</span>
+                  </label>
+                  <br />
+                  <input
+                    type="text"
+                    id="firstname"
+                    placeholder="Name"
+                    name="Name"
+                    required
+                    maxlength="255"
+                    class="input"
+                  />
+                  <br />
+                </div>
+                <div class="box1">
+                  <label for="lastname">
+                    <span class="text1">Last name</span>
+                  </label>
+                  <br />
+                  <input
+                    type="text"
+                    id="lastname"
+                    placeholder="Last name"
+                    name="lastname"
+                    required
+                    maxlength="255"
+                    class="input"
+                  />
+                  <br />
+                </div>
+              </div>
+              <div class="box">
+                <div class="box1">
+                  <label for="email">
+                    <span class="text1">E-mail address</span>
+                  </label>
+                  <br />
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="myemail@sample.com"
+                    name="email"
+                    required
+                    class="input"
+                  />
+                  <br />
+                </div>
+                <div class="box1">
+                  <label for="password">
+                    <span class="text1">Password</span>
+                  </label>
+                  <br />
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    minlength="6"
+                    maxlength="255"
+                    class="input"
+                  />
+                  <br />
+                </div>
+              </div>
+              <div class="box">
+                <div class="box2">
+                  <span class="text1">Gender</span>
+                  <br />
+                  <input type="radio" id="male" name="gender" required />
+                  <label for="male" class="text2"> Male </label>
+                  <br />
+                  <input type="radio" id="female" name="gender" required />
+                  <label for="female" class="text2">Female</label>
+                  <br />
+                </div>
+                <div class="box2">
+                  <label for="country">
+                    <span class="text1">Where do you live</span>
+                  </label>
+                  <br />
+                  <select id="country" name="country" required class="input3">
+                    <option
+                      value=""
+                      disabled
+                      selected
+                      class="input3"
+                      class="input"
+                    >
+                      Select country
+                    </option>
+                    <option value="lv" class="input3">Latvia</option>
+                    <option value="ee" class="input3">Estonia</option>
+                    <option value="lt" class="input3">Lithuania</option>
+                  </select>
+                  <br />
+                </div>
+                <div class="box2">
+                  <input
+                    type="checkbox"
+                    id="termsandconditions"
+                    name="termsandconditions"
+                    required
+                  />
+                  <label for="termsandconditions">
+                    <span class="text1">
+                      I have agreed to
+                      <a href="./termsandconditions.html" target="_blank">
+                        terms and conditions</a
+                      >.
+                    </span>
+                  </label>
+                  <br />
+                </div>
+                <div class="box3">
+                  <button class="input2">
+                    <span>Submit</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
